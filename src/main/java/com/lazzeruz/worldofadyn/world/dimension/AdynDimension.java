@@ -19,13 +19,11 @@ public class AdynDimension extends Dimension {
         return new WorldOfAdynChunkGenerator(world, new WorldOfAdynBiomeProvider(), new WorldOfAdynGenSettings());
     }
 
-    @org.jetbrains.annotations.Nullable
     @Override
     public BlockPos findSpawn(ChunkPos chunkPosIn, boolean checkValid) {
         return null;
     }
 
-    @org.jetbrains.annotations.Nullable
     @Override
     public BlockPos findSpawn(int posX, int posZ, boolean checkValid) {
         return null;
@@ -51,31 +49,37 @@ public class AdynDimension extends Dimension {
 
     @Override
     public boolean isSurfaceWorld() {
+
         return false;
     }
 
     @Override
     public Vec3d getFogColor(float celestialAngle, float partialTicks) {
+
         return Vec3d.ZERO;
     }
 
     @Override
     public boolean canRespawnHere() {
+
         return true;
     }
 
     @Override
     public boolean doesXZShowFog(int x, int z) {
+
         return false;
     }
 
     @Override
     public SleepResult canSleepAt(PlayerEntity player, BlockPos pos) {
+
         return SleepResult.ALLOW;
     }
 
     @Override
     public int getActualHeight() {
+
         return 256;
     }
 }
