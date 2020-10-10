@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "cross": "worldofadyn:blocks/mistwood_sapling"
+    "cross": "worldofadyn:block/mistwood_sapling"
   }
 }

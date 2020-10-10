@@ -1,10 +1,7 @@
 package com.lazzeruz.worldofadyn;
 
 
-import com.lazzeruz.worldofadyn.init.BiomeInit;
-import com.lazzeruz.worldofadyn.init.BlockInit;
-import com.lazzeruz.worldofadyn.init.DimensionInit;
-import com.lazzeruz.worldofadyn.init.ItemInit;
+import com.lazzeruz.worldofadyn.init.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -70,7 +67,7 @@ public class WorldOfAdyn
 
         @Override
         public ItemStack createIcon(){
-            return new ItemStack(ItemInit.MISTWOOD_SAPLING_ITEM.get() );
+            return new ItemStack(ItemInit.MISTWOOD_PLANKS_ITEM.get());
         }
     };
 }

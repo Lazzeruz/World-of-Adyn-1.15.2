@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:block/leaves",
-  "textures": {
-    "all": "worldofadyn:blocks/mistwood_leaves"
-  }
+  "parent": "worldofadyn:block/mistwood_leaves"
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
-    "axis=x": {"model": "worldofadyn:block/mistwood_log_horizontal", "x": 90, "y": 90},
+    "axis=x": {"model": "worldofadyn:block/mistwood_log", "x": 90, "y": 90},
     "axis=y": {"model": "worldofadyn:block/mistwood_log"},
-    "axis=z": {"model": "worldofadyn:block/mistwood_log_horizontal", "x": 90}
+    "axis=z": {"model": "worldofadyn:block/mistwood_log", "x": 90}
   }
 }
