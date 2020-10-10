@@ -1,6 +1,6 @@
 package com.lazzeruz.worldofadyn.world.biomes;
 
-import com.lazzeruz.worldofadyn.world.Features.WorldOfAdynBiomeFeatures;
+import com.lazzeruz.worldofadyn.world.features.WorldOfAdynBiomeFeatures;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
