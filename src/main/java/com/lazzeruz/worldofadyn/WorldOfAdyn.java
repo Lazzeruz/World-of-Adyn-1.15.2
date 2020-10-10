@@ -2,7 +2,11 @@ package com.lazzeruz.worldofadyn;
 
 
 import com.lazzeruz.worldofadyn.init.BiomeInit;
+import com.lazzeruz.worldofadyn.init.BlockInit;
 import com.lazzeruz.worldofadyn.init.DimensionInit;
+import com.lazzeruz.worldofadyn.init.ItemInit;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,6 +40,8 @@ public class WorldOfAdyn
 
         BiomeInit.BIOMES.register(modEventBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
@@ -59,4 +65,12 @@ public class WorldOfAdyn
     public void onServerStarting(FMLServerStartingEvent event) {
 
     }
+
+    public static final ItemGroup TAB = new ItemGroup("worldofadyntab"){
+
+        @Override
+        public ItemStack createIcon(){
+            return new ItemStack(ItemInit.MISTWOOD_SAPLING_ITEM.get() );
+        }
+    };
 }
